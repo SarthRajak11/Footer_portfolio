@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+
+    .footer_container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer_section {
+      flex: 1 1 250px;
+      min-width: 200px;
+    }
+
+    .footer_section h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      border-left: 4px solid #00c9a7;
+      padding-left: 10px;
+    }
+
+    .footer_section p,
+    .footer_section a {
+      color: #ccc;
+      font-size: 15px;
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer_section a:hover {
+      color: #00c9a7;
+    }
+
+    .social_links {
+      display: flex;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .social_links a img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social_links a img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 8px #00c9a7;
+    }
+
+    .footer_bottom {
+      text-align: center;
+      background-color: #111;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer_container">
+      <!-- Contact -->
+      <div class="footer_section">
+        <h2>Contact Us</h2>
+        <p>Phone: 8839761950</p>
+        <p>Email: rajak.sarth@gmail.com</p>
+        <p>Location: Your City, Country</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer_section">
+        <h2>Quick Links</h2>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="footer_section">
+        <h2>Follow Us</h2>
+        <div class="social_links">
+          <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="github.png" alt="GitHub"></a>
+          <a href="#"><img src="leetcode.png" alt="LeetCode"></a>
+          <a href="#"><img src="Hackerank.png" alt="HackerRank"></a>
+          <a href="#"><img src="codechief.png" alt="CodeChef"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      © 2025 www.sarth.com — All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
